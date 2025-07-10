@@ -1,3 +1,5 @@
+
+
 <template>
     <section class="Caring-Block">
         <section class="Caring-Text">
@@ -7,28 +9,11 @@
                 are increasing their membership income and lot's more.
             </p>
         </section>
+
         <section class="Carin-Cards">
-            <section class="Card" id="Card-1">
+            <section class="Card" :id="`Card-${card.id}`" v-for="card in cards" :key="card.id" :style="{ backgroundImage: `url(${card.imgeUrl})` }">
                 <article class="Card-Info">
-                    <h2 class="Card-Info__Title">Creating Streamlined <br> Safeguarding Processes with <br> OneRen</h2>
-                <article class="Logos-Link">
-                    <a class="Logos-Link__text" href="#">Readmore</a>
-                    <img class="Logos-Link__img" src="/assets/Right.png" alt="#">
-                </article>
-                </article>
-            </section>
-            <section class="Card" id="Card-2">
-                <article class="Card-Info">
-                    <h2 class="Card-Info__Title">What are your safeguarding <br> responsibilities and how can <br> you manage them?</h2>
-                <article class="Logos-Link">
-                    <a class="Logos-Link__text" href="#">Readmore</a>
-                    <img class="Logos-Link__img" src="/assets/Right.png" alt="#">
-                </article>
-                </article>
-            </section>            
-            <section class="Card" id="Card-3">
-                <article class="Card-Info">
-                    <h2 class="Card-Info__Title">Revamping the Membership<br> Model with Triathlon<br> Australia</h2>
+                    <h2 class="Card-Info__Title" v-html="card.Description"></h2>
                 <article class="Logos-Link">
                     <a class="Logos-Link__text" href="#">Readmore</a>
                     <img class="Logos-Link__img" src="/assets/Right.png" alt="#">
@@ -36,8 +21,26 @@
                 </article>
             </section>
         </section>
+
     </section>
 </template>
+
+<script setup>
+import { ref, onMounted } from 'vue';
+
+const cards = ref([]);
+
+onMounted(async () => {
+  try {
+    const { data } = await useFetch('/api/cards');
+    cards.value = data.value;
+  } 
+  catch (error) {
+    console.error('Ошибка получения данных:', error);
+  }
+});
+</script>
+
 <style lang="scss">
 
 @media screen and (min-width: 1200px) {
@@ -110,11 +113,13 @@
     padding: 10px;
     border-radius: 10px;
     position: relative;
-    top: 30px;
+    top: 60px;
     box-shadow: 0px 3px 10px rgba(171, 190, 209, 0.527);
 }
 
 .Card-Info__Title{
+    width: 280px;
+    height: 100px;
     font-family: Inter;
     font-size:20px;
     font-weight:600;
@@ -195,11 +200,12 @@
     padding: 10px;
     border-radius: 10px;
     position: relative;
-    top: 30px;
+    top: 60px;
     box-shadow: 0px 3px 10px rgba(171, 190, 209, 0.527);
 }
 
 .Card-Info__Title{
+    width: 280px;
     font-family: Inter;
     font-size:20px;
     font-weight:600;
@@ -280,11 +286,12 @@
     padding: 10px;
     border-radius: 10px;
     position: relative;
-    top: 30px;
+    top: 60px;
     box-shadow: 0px 3px 10px rgba(171, 190, 209, 0.527);
 }
 
 .Card-Info__Title{
+    width: 200px;
     font-family: Inter;
     font-size:15px;
     font-weight:600;
@@ -370,11 +377,12 @@
     padding: 10px;
     border-radius: 10px;
     position: relative;
-    top: 30px;
+    top: 60px;
     box-shadow: 0px 3px 10px rgba(171, 190, 209, 0.527);
 }
 
 .Card-Info__Title{
+    width: 200px;
     font-family: Inter;
     font-size:13px;
     font-weight:600;

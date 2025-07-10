@@ -75,6 +75,10 @@
     gap: 10px;
     align-items: center;
 }
+.Logos-Link:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
 
 .Logos-Link__text{
     color: rgba(76, 175, 79, 1);
@@ -83,6 +87,8 @@
     font-weight: 600;
     text-decoration: none;
 }
+
+
 
 .Logos{
     display: flex;
@@ -140,6 +146,11 @@
     display: flex;
     gap: 10px;
     align-items: center;
+}
+
+.Logos-Link:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 .Logos-Link__text{
@@ -210,6 +221,11 @@
     display: flex;
     gap: 10px;
     align-items: center;
+}
+
+.Logos-Link:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 .Logos-Link__text{
@@ -287,6 +303,11 @@
     display: flex;
     gap: 10px;
     align-items: center;
+}
+
+.Logos-Link:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 .Logos-Link__text{

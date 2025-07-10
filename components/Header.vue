@@ -54,6 +54,11 @@
             font-family: Inter;
             font-weight: 400;
         }
+
+        &__Link:hover{
+            color: rgba(76, 175, 79, 1);
+            transition: 0.1s;
+        }
     }
     
     .Logo{
@@ -88,6 +93,18 @@
             font-family: Inter; 
             border: none;
         }
+
+
+        &__Btn--green:active{
+            width: 90px;
+            height: 40px;
+            border-radius: 6px;
+            background: rgba(56, 142, 59, 1);
+            color: white;
+            font-size: 14px;
+            font-weight: 500;
+            font-family: Inter; 
+        }
     }
 }
 
@@ -108,6 +125,11 @@
             font-size: 14px;
             font-family: Inter;
             font-weight: 400;
+        }
+        
+        &__Link:hover{
+            color: rgba(76, 175, 79, 1);
+            transition: 0.1s;
         }
     }
     
@@ -143,6 +165,10 @@
             font-family: Inter; 
             border: none;
         }
+
+        &__Btn--green:active{
+            background: rgba(56, 142, 59, 1);
+        }
     }
 
     .Logo__Image,.Logo__Text{
@@ -167,6 +193,11 @@
             font-size: 12px;
             font-family: Inter;
             font-weight: 400;
+        }
+
+        &__Link:hover{
+            color: rgba(76, 175, 79, 1);
+            transition: 0.1s;
         }
     }
     
@@ -201,11 +232,17 @@
             font-family: Inter; 
             border: none;
         }
+        
+        &__Btn--green:active{
+            background: rgba(56, 142, 59, 1);
+        }
     }
 
     .Logo__Image,.Logo__Text{
         transform: scale(0.7);
     }
+
+    
 }
 
 @media  (min-width: 320px) and (max-width: 767px){
@@ -242,6 +279,11 @@
             font-family: Inter;
             font-weight: 400;
         }
+
+        &__Link:hover{
+            color: rgba(76, 175, 79, 1);
+            transition: 0.1s;
+        }
     }
     
     .Logo{
@@ -276,6 +318,10 @@
             font-family: Inter; 
             border: none;
         }
+
+        &__Btn--green:active{
+            background: rgba(56, 142, 59, 1);
+        }
     }
 
     .Logo__Image,.Logo__Text{
@@ -285,9 +331,10 @@
 
     dialog{
         width: 100%;
-        height: 300px;
+        height: 100%;
         display: none;
         justify-content: center;
+ 
         border: none;
         background-color: rgba(0, 0, 255, 0);
     }
@@ -296,10 +343,9 @@
         padding: 10px;
         position: relative;
         top: 70px;
-        left: 20px;
-        width:100px ;
+        width:200px ;
         box-sizing: border-box;
-        height: 200px;
+        height: 230px;
         background-color: rgb(255, 255, 255);
         border-radius: 5px;
         display: grid;
@@ -321,15 +367,25 @@
         background-image: url(https://images.icon-icons.com/1769/PNG/512/4115230-cancel-close-cross-delete_114048.png);
         background-size: contain;
         border: none;
-    
+    }
+
+    .Btn-Close_Btn:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
     }
 
     .ModWin_Link{
         font-family: Inter;
-        font-size: 10px;
+        font-size: 14px;
         font-weight: 500;
         color: black;
         text-decoration: none;
+    }
+
+    .ModWin_Link:hover{
+        transform: scale(1.2);
+        transition: 0.1s;
+        color: rgba(76, 175, 79, 1) ;
     }
 } 
 </style>
@@ -342,7 +398,6 @@ export default {
         const dialog = document.getElementById('PopUp');
         if (dialog) {
           dialog.showModal(); 
-          dialog.style.display = 'flex';
         }
       }
 
@@ -351,7 +406,6 @@ export default {
       const dialog = document.getElementById('PopUp');
       if (dialog) {
         dialog.close(); 
-        dialog.style.display = 'none';
       }
     },
   },

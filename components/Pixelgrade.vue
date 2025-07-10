@@ -52,6 +52,19 @@
         font-family: Inter; 
         border: none;
     }
+
+    .Titl-Desc-Btn__Btn:active{
+        width: 150px;
+        height: 50px;
+        border-radius: 6px;
+        background: rgba(56, 142, 59, 1);
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: Inter; 
+        border: none;
+    }
+
     .Titl-Desc-Btn{
         display: grid;
         gap: 16px;
@@ -87,6 +100,18 @@
         height: 45px;
         border-radius: 6px;
         background: rgba(76, 175, 79, 1);
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: Inter; 
+        border: none;
+    }
+
+        .Titl-Desc-Btn__Btn:active{
+        width: 140px;
+        height: 45px;
+        border-radius: 6px;
+        background: rgba(56, 142, 59, 1);
         color: white;
         font-size: 16px;
         font-weight: 500;
@@ -135,6 +160,18 @@
         height: 45px;
         border-radius: 6px;
         background: rgba(76, 175, 79, 1);
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: Inter; 
+        border: none;
+    }
+
+    .Titl-Desc-Btn__Btn:active{
+        width: 140px;
+        height: 45px;
+        border-radius: 6px;
+        background: rgba(56, 142, 59, 1);
         color: white;
         font-size: 16px;
         font-weight: 500;
@@ -191,6 +228,18 @@
         height: 35px;
         border-radius: 6px;
         background: rgba(76, 175, 79, 1);
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: Inter; 
+        border: none;
+    }
+
+    .Titl-Desc-Btn__Btn:active{
+        width: 120px;
+        height: 35px;
+        border-radius: 6px;
+        background: rgba(56, 142, 59, 1);
         color: white;
         font-size: 14px;
         font-weight: 500;

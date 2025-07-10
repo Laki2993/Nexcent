@@ -126,6 +126,12 @@
     text-decoration: none;
 }
 
+.Links-Col__Link:hover{
+transform: scale(1.1);
+transition: 0.1s;
+color: rgba(76, 175, 79, 1);
+}
+
 .Links{
     display: flex;
     justify-content: center;
@@ -248,6 +254,12 @@
     font-weight: 40;
     color:rgba(245, 247, 250, 1);
     text-decoration: none;
+}
+
+.Links-Col__Link:hover{
+transform: scale(1.1);
+transition: 0.1s;
+color: rgba(76, 175, 79, 1);
 }
 
 .Links{
@@ -373,6 +385,12 @@
     font-weight: 40;
     color:rgba(245, 247, 250, 1);
     text-decoration: none;
+}
+
+.Links-Col__Link:hover{
+    transform: scale(1.1);
+    transition: 0.1s;
+    color: rgba(76, 175, 79, 1);
 }
 
 .Links{
@@ -503,6 +521,14 @@
     color:rgba(245, 247, 250, 1);
     text-decoration: none;
 }
+
+.Links-Col__Link:hover{
+transform: scale(1.1);
+transition: 0.1s;
+color: rgba(76, 175, 79, 1);
+
+}
+
 
 .Links{
     display: flex;

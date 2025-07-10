@@ -57,11 +57,23 @@
             color: rgba(113, 113, 113, 1)   ;
         }
 
-           &__Btn--green{
+        &__Btn--green{
             width:130px;
             height: 50px;
             border-radius: 6px;
             background: rgba(76, 175, 79, 1);
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: Inter;
+            border: none;
+        }
+
+        &__Btn--green:active{
+            width:130px;
+            height: 50px;
+            border-radius: 6px;
+            background: rgba(56, 142, 59, 1);
             color: white;
             font-size: 16px;
             font-weight: 500;
@@ -311,6 +323,12 @@
             font-family: Inter;
             border: none;
         }
+
+        &__Btn--green:active    {
+            background: rgba(56, 142, 59, 1);
+        }
+
+
     }
 
     .Slider-Slide{
@@ -554,6 +572,10 @@
             font-weight: 500;
             font-family: Inter;
             border: none;
+        }
+
+        &__Btn--green:active{
+            background: rgba(76, 175, 79, 1);
         }
     }
 
@@ -799,6 +821,10 @@
             font-weight: 500;
             font-family: Inter;
             border: none;
+        }
+
+        &__Btn--green:active{
+            background: rgba(56, 142, 59, 1);
         }
     }
 

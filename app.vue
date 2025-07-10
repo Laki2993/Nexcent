@@ -12,6 +12,9 @@
  <Footer />
 </template>
 
+<script setup>
+  import Caring from './components/Caring.vue';
+</script>
 <style lang="scss">
 *{
   margin: 0;
